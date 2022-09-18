@@ -1,0 +1,44 @@
+.input__container {
+  width: 100%;
+  height: 3.125rem;
+  display: flex;
+  background-color: #fff;
+  border: 2px solid var(--border-color);
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.input__container.focus {
+  border: 2px solid var(--border-color-focus);
+}
+
+.input__container input {
+  width: 100%;
+  font-size: 18px;
+  border: none;
+}
+
+.input__container input:focus {
+  outline: none;
+}
+
+.input__container button {
+  width: 3.75rem;
+  height: 100%;
+  cursor: pointer;
+  right: 0;
+  position: absolute;
+  border: none;
+  border-left: 2px solid var(--border-color);
+  background-color: #fff;
+}
+
+.input__container.focus button {
+  border-left: 2px solid var(--border-color-focus);
+}
+
+.input__container img {
+  width: auto;
+  height: 1.875rem;
+}

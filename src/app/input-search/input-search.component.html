@@ -1,0 +1,11 @@
+<div class="input__container" [class.focus]="onFocus">
+  <input
+    type="text"
+    placeholder=""
+    (focus)="onFocus = !onFocus"
+    (focusout)="onFocus = !onFocus"
+    [formControl]="control" />
+  <button>
+    <img src="assets/img/search-icon.png" alt="Search Icon" />
+  </button>
+</div>

@@ -1,0 +1,28 @@
+main {
+  padding: 0 1.875rem;
+}
+
+.main__search {
+  margin: 4rem auto;
+  width: 50%;
+}
+
+.main__list {
+  width: auto;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__search {
+    width: 80%;
+  }
+
+  .main__list {
+    padding-bottom: 2rem;
+  }
+}

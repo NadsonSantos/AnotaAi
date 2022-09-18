@@ -1,0 +1,25 @@
+<li *ngIf="data" class="card">
+  <button class="card__close" (click)="onDelete()">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="ionicon"
+      viewBox="0 0 512 512">
+      <title>Close</title>
+      <path
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="32"
+        d="M368 368L144 144M368 144L144 368" />
+    </svg>
+  </button>
+  <figure class="card__img">
+    <img [src]="data.img" [alt]="data.title" />
+    <figCaption [style.backgroundColor]="types[data.type].color">
+      {{ types[data.type].label }}
+    </figCaption>
+  </figure>
+  <h6 class="card__title">{{ data.title }}</h6>
+  <p class="card__text">{{ data.description }}</p>
+</li>
